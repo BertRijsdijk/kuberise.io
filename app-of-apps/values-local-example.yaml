@@ -1,7 +1,7 @@
 applications:
 
   hello:
-    enabled: true
+    enabled: false
     path: values/local-example/applications/dev/hello
 
   cnpg-database:
