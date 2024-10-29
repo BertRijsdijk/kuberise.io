@@ -12,12 +12,15 @@ applications:
     enabled: false
     path: values/local-example/platform/raw
 
+  dashboards:
+    enabled: true
+
 helmCharts:
   keycloak:
     enabled: true
 
   keycloak-operator:
-    enabled: true
+    enabled: false
 
   ingress-nginx:
     enabled: true
@@ -46,7 +49,7 @@ helmCharts:
     enabled: true
 
   backstage:
-    enabled: true
+    enabled: false
 
   sealed-secrets:
     enabled: false

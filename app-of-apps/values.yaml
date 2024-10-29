@@ -1,3 +1,4 @@
+# some of the values will be filled by install.sh script
 global:
   platformName: x
   domain: x
@@ -22,7 +23,11 @@ applications:
     namespace: cloudnative-pg
 
   raw:
-    enabled: true
+    enabled: false
+
+  dashboards:
+    enabled: false
+    namespace: monitoring
 
 
 helmCharts:
@@ -66,7 +71,7 @@ helmCharts:
     enabled: false
     repoURL: https://grafana.github.io/helm-charts
     namespace: monitoring
-    targetRevision: 0.78.2
+    targetRevision: 0.79.3
     chart: loki-distributed
 
   promtail:
